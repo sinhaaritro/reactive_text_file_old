@@ -1,11 +1,12 @@
 {
     "configurations": [
-        {
-            "name": "Flutter",
-            "request": "launch",
-            "type": "dart",
-            "program": "lib/main.dart"
-        },
+        // The first 3 modes runs Flutter in Debug/Dev, Profile or Release Mode simuntaniously.
+        // The last 2 modes will run Flutter in Debug/Dev but on the web as HTML or CanvasKit.
+
+        // No device has been specified. The device can be selected from the Bottom Status Bar.
+        // To specify a device use the the args field to and enter "-d", "chrome" in the list.
+        // Example-> "args": ["-d", "chrome"]
+        // In the Example chrome is used as an example device.
         {
             "name": "Flutter Debug",
             "request": "launch",
@@ -18,28 +19,30 @@
             "request": "launch",
             "type": "dart",
             "program": "lib/main.dart",
-            "flutterMode": "release"
+            "flutterMode": "profile"
         },
         {
             "name": "Flutter Profile",
             "request": "launch",
             "type": "dart",
             "program": "lib/main.dart",
-            "flutterMode": "profile"
+            "flutterMode": "release"
         },
         {
-            "name": "Flutter for web Chrome (HTML)",
+            "name": "Flutter for Web (HTML)",
             "request": "launch",
             "type": "dart",
             "program": "lib/main.dart",
-            "args": ["-d", "chrome", "--web-renderer", "html"]
+            "args": ["--web-renderer", "html"],
+            "flutterMode": "debug"
         },
         {
-            "name": "Flutter for web Chrome (CanvasKit)",
+            "name": "Flutter for Web (CanvasKit)",
             "request": "launch",
             "type": "dart",
             "program": "lib/main.dart",
-            "args": ["-d", "chrome", "--web-renderer", "canvaskit"]
+            "args": ["--web-renderer", "canvaskit"],
+            "flutterMode": "debug"
         }
     ]
 }
