@@ -1,0 +1,23 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true,
+        ".dart_tool": true,
+        ".idea": true,
+        "build": true,
+        ".metadata": true,
+        ".packages": true,
+        "ios": true,
+        "android": true,
+        ".vscode": false
+    },
+    "explorerExclude.backup": null
+}

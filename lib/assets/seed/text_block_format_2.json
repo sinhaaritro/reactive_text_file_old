@@ -1,0 +1,82 @@
+{
+    "id": "blockID1",
+    "ops": [
+        {
+            "i": {
+                "txt": "The "
+            }
+        },
+        {
+            "i": {
+                "txt": "fox."
+            }
+        },
+        {
+            "i": {
+                "txt": " jumps",
+                "st": 7
+            }
+        },
+        {
+            "i": {
+                "txt": "quick ",
+                "st": 4,
+                "mrk": [
+                    "bold"
+                ]
+            }
+        },
+        {
+            "i": {
+                "txt": "brown ",
+                "st": 10,
+                "mrk": []
+            }
+        },
+        {
+            "i": {
+                "txt": "brown ",
+                "st": 10,
+                "mrk": [
+                    "b",
+                    "i",
+                    "u",
+                    "st",
+                    "subs",
+                    "sipers",
+                    "m"
+                ],
+                "ts": 16,
+                "tc": "#fcba03ff",
+                "hc": "#fcba03ff"
+            }
+        },
+        {
+            "d": {
+                "st": 11,
+                "end": 17
+            }
+        },
+        {
+            "d": {
+                "st": 20
+            }
+        },
+        {
+            "u": {
+                "st": 10,
+                "end": 13,
+                "mrk": [
+                    "italics"
+                ]
+            }
+        },
+        {
+            "u": {
+                "st": 0,
+                "end": 3,
+                "txt": "That "
+            }
+        }
+    ]
+}

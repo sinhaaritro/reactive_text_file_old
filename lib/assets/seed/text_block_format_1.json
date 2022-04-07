@@ -1,0 +1,55 @@
+{
+    "id": "blockID1",
+    "ops": [
+        {
+            "type": "i",
+            "txt": "The "
+        },
+        {
+            "type": "i",
+            "txt": "fox."
+        },
+        {
+            "type": "i",
+            "txt": " jumps",
+            "st": 7
+        },
+        {
+            "type": "i",
+            "txt": "quick ",
+            "st": 4,
+            "mrk": [
+                "bold"
+            ]
+        },
+        {
+            "type": "i",
+            "txt": "brown ",
+            "st": 10,
+            "mrk": []
+        },
+        {
+            "type": "d",
+            "st": 11,
+            "end": 17
+        },
+        {
+            "type": "d",
+            "st": 20
+        },
+        {
+            "type": "u",
+            "st": 10,
+            "end": 13,
+            "mrk": [
+                "italics"
+            ]
+        },
+        {
+            "type": "u",
+            "st": 0,
+            "end": 3,
+            "txt": "That "
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "id": "blockID1",
+    "ops": [
+        {
+            "i": {
+                "text": "Hello ",
+                "index": -1
+            }
+        },
+        {
+            "i": {
+                "text": "World.",
+                "index": -1,
+                "mark": [
+                    "bold"
+                ]
+            }
+        },
+        {
+            "i": {
+                "text": "Hi"
+            }
+        }
+    ]
+}

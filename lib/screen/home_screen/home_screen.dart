@@ -1,46 +1,55 @@
+// import 'dart:html';
+
 import 'package:flutter/material.dart';
+import 'package:reactive_text_file/library/services/reactive_text/simple_selectable_text.dart';
+import 'package:reactive_text_file/library/services/reactive_text/text_caret.dart';
+import 'package:reactive_text_file/screen/home_screen/all_text_options.dart';
+import 'package:reactive_text_file/screen/home_screen/editable_text_test.dart';
+import 'package:reactive_text_file/screen/home_screen/raw_keyboard_input_test.dart';
+import 'package:reactive_text_file/screen/home_screen/selectable_text_test.dart';
 
-class HomeScreen extends StatefulWidget {
-  const HomeScreen({Key? key, required this.title}) : super(key: key);
-  final String title;
-
-  @override
-  _HomeScreenState createState() => _HomeScreenState();
-}
-
-class _HomeScreenState extends State<HomeScreen> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
+class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: const Text('Reactive text'),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
+          // ignore: prefer_const_literals_to_create_immutables
           children: <Widget>[
-            const Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headline4,
+            // RawKeyboardExample(),
+            // const TextField(),
+            // const SizedBox(height: 50),
+            // RawKeyboardExample(),
+            // const EditableTextTest(),
+            // const SizedBox(height: 50),
+            // const SelectableTextTest(),
+            // const SizedBox(height: 50),
+            const AllTextOptions(),
+            const SizedBox(height: 50),
+            const SimpleSelectableText(
+              textSpan: TextSpan(
+                children: <TextSpan>[
+                  TextSpan(text: 'Hello '),
+                  TextSpan(
+                      text: 'bold',
+                      style: TextStyle(fontWeight: FontWeight.bold)),
+                  TextSpan(text: ' world!'),
+                ],
+              ),
+              showDebugPaint: true,
+              textSelection: TextSelection(baseOffset: 2, extentOffset: 5),
+              highlightWhenEmpty: true,
+              showCaret: true,
+              textCaret: TextCaret(
+                color: Colors.blue,
+              ),
             ),
           ],
         ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
       ),
     );
   }
